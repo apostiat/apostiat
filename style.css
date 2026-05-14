@@ -1,0 +1,280 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  background-color: #FFFFFF; /* Used to be #2E004D*/
+  color: #CB00E0;
+  font-family: Times;
+}
+
+
+/* Main text area */
+.main {
+  margin-left: 4px;
+}
+
+
+/* Navbar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFFF;
+  position: sticky;
+  top: 0;
+}
+ul li {
+  float: left;
+}
+ul li a {
+  display: block;
+  text-align: center;
+}
+.dropdown {
+  display: none;
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn, .dropdown .dropbtn-active {
+  font-family: Times;
+  border: none;
+  
+  cursor: pointer;
+  margin: 0;
+}
+.dropdown-content, .dropdown-content-icons {
+  display: none;
+  position: absolute;
+  background-color: #F9F9F9;
+  min-width: 160px;
+  z-index: 1;
+  
+  grid-template-columns: auto;
+}
+.dropdown-content-icons {
+  grid-template-columns: 48px auto;
+}
+.dropdown-content a, .dropdown-content-icons a {
+  float: none;
+  padding: 16px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  top: 0;
+  margin: 0;
+}
+.dropdown:hover .dropdown-content, .dropdown:hover .dropdown-content-icons {
+  display: grid;
+}
+/* Colors and formatting */
+ul li a, .dropdown .dropbtn, .dropdown .dropbtn-active {
+  background-color: #FFFFFF;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 8px;
+}
+.dropdown-content a, .dropdown-content-icons a, ul li a, .dropdown .dropbtn, .dropdown .dropbtn-active {
+  color: #6100E6;
+}
+a.active, .dropbtn:focus, .dropdown .dropbtn-active, .dropdown .dropbtn-active { /* ul li a.active */
+  background-color: #D9D9D9;
+}
+ul li a:hover, .dropdown .dropbtn:hover, .dropdown .dropbtn-active:hover , .dropdown-content a:hover, .dropdown-content-icons a:hover {
+  background-color: #EBEBEB;
+  color: #CB00E0;
+}
+
+
+/* Sidebar */
+.sidebar {
+  /* This aligns the releases to the left and makes it part of the page when the width is too small to fit it on the right like normal */
+  display: block;
+  position: left;
+
+  top: 0;
+  margin: 0;
+  padding: 0;
+  width: 180px;
+  background-color: #FFFFFF; /* Used to be #2E004D*/
+  overflow: auto;
+}
+/* Releases */
+.sidebar a {
+  padding-left: 8px;
+  padding-right: 8px;
+  color: #6100E6;
+  display: block;
+  text-decoration: none;
+}
+.sidebar a:hover {
+  background-color: #FFFFFF; /* Used to be #7C0096*/
+  color: #7C0096; /* Used to be white*/
+}
+
+
+/* Releases Page */
+.releases {
+  /* Grid for small page */
+  grid-template-columns: 1fr 1fr 1fr;
+
+  display: grid;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFFF; /* Used to be #2E004D*/
+  max-width: 1800px;
+}
+/* Releases */
+.releases a {
+  padding-left: 16px;
+  padding-right: 16px;
+  color: #6100E6;
+  display: block;
+  text-decoration: none;
+}
+.releases a:hover {
+  background-color: #EBEBEB; /* Used to be #7C0096*/
+  color: #7C0096; /* Used to be white*/
+}
+/*.releasebox {
+  background-color: #7C0096
+}*/
+
+/* Extra Track Info */
+.TrackInfo {
+  color:#525252;
+  margin-top:1em;
+  margin-bottom:0;
+}
+
+
+/* Newsletter */
+.newsletter {
+  /* This aligns the releases to the left and makes it part of the page when the width is too small to fit it on the right like normal */
+  display: block;
+  position: center;
+
+  top: 0;
+  margin: 0;
+  padding: 0;
+  max-width: 1000px;
+  background-color: #FFFFFF; /* Used to be #2E004D*/
+  overflow: auto;
+}
+
+/* Max sizes for liver list images */
+.liverlistimage {
+  max-width: 1000px;
+  max-height: 600px;
+}
+.liverlisttext {
+  font-size: 25px;
+}
+
+
+/* Artists */
+.artists {
+  /* Grid for small page */
+  grid-template-columns: 2fr 1fr;
+
+  display: grid;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFFF; /* Used to be #2E004D*/
+}
+.artistsblock {
+  display: block;
+}
+.artiststext {
+  padding: 2px;
+}
+
+
+/* Comic Page */
+.Comic {
+  max-width: 100vw;
+}
+/* Need to set up a better way to do this, need an easy way to zoom into the comics on mobile and other small screens
+.Comic:active {
+  max-width: 100%;
+}*/
+
+.ComicButton {
+  display: inline-block;
+  background-color: #f7f7f7;
+  color: #6100E6;
+  padding: 16px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0px;
+}
+.ComicButton:hover {
+  background-color: #EBEBEB;
+  color: #CB00E0;
+}
+.ComicButtonInactive {
+  display: inline-block;
+  background-color: #A7A7A7;  /*#D9D9D9*/
+  color: #050505; /*#373737*/
+  padding: 16px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0px;
+}
+.ComicTitle { /* Modified h1 values */
+  display: block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.1675em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+/* Release Date & Other Info Text */
+.InfoText {
+  margin-top:1em;
+  margin-bottom:0;
+  color:#525252
+}
+
+
+/* This only gets used when the page is 550 pixels wide or wider */
+@media screen and (min-width: 550px)
+{
+  /* Adds empty space to the right of the main text area so the sidebar doesn't overlap */
+  .main {
+    margin-right: 180px;
+  }
+
+  /* Aligns the sidebar to the right of the page like normal */
+  .sidebar {
+    display: inline;
+    position: -webkit-sticky;
+    position: sticky;
+  	float: right;
+  }
+
+  /* Aligns the sidebar to the right of the page like normal */
+  .releases {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  /* Unhide desktop navbar */
+  .dropdown {
+    display: inline;
+  }
+  /* Hide mobile navbar */
+  ul li {
+    display: none;
+  }
+  ul li a, .dropdown .dropbtn, .dropdown .dropbtn-active {
+    padding: 10px 16px;
+  }
+
+  /* Adds extra padding to comic controls if there is enough space */
+  .ComicButton, .ComicButtonInactive {
+  padding: 16px 32px;
+}
+}
